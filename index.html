@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Farid Nurohman</title>
+<link rel="icon" href="https://ayra.eu.org/img/icon.ico">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{font-family:"Onest",sans-serif}
+header.sticky{top:0;z-index:1000}
+.web-title{color:#87521C;text-transform:uppercase}
+.web-subtitle{font-family:"Raleway","Onest",sans-serif;text-transform:uppercase}
+.web-text{color:#505050}
+.vl{border-left:1px solid #a0a0a04d;height:40px;align-self:center}
+.vlx{border-left:1px solid #a0a0a04d;height:18px;align-self:center}
+.footer{color:#aaa}
+.icons a{padding:5px;color:inherit}
+.icons a:hover{color:#007bff}
+.mobile-menu{max-height:0;opacity:0;overflow:hidden;transition:max-height .5s ease,opacity .5s ease}
+.mobile-menu.open{max-height:500px;opacity:1}
+#menu-icon{transition:transform .3s ease}
+#menu-btn.active #menu-icon{transform:rotate(90deg)}
+</style>
+</head>
+<body class="bg-white text-black">
+
+<header class="bg-[#FBEBE1] sticky">
+  <div class="container mx-auto px-4 py-4 items-center hidden md:flex">
+    <a href="#" onclick="showSection('home')"><h1 class="text-xl font-bold web-title tracking-wide">MUHAMMAD FARID NUROHMAN</h1></a>
+    <div class="vl mx-5 hidden md:block"></div>
+    <nav class="hidden md:block">
+      <ul class="flex space-x-4 items-center text-[15px]">
+        <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('about')">About</a></li><div class="vlx mx-5"></div>
+        <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('resume')">Resume</a></li><div class="vlx mx-5"></div>
+        <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('projects')">Projects</a></li><div class="vlx mx-5"></div>
+        <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('blog')">Blog</a></li><div class="vlx mx-5"></div>
+        <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container mx-auto px-4 py-4 items-center justify-between flex md:hidden">
+    <a href="#" onclick="showSection('home')"><h1 class="text-xl font-bold web-title">MUHAMMAD FARID NUROHMAN</h1></a>
+    <button id="menu-btn" class="block md:hidden text-2xl text-gray-700"><i id="menu-icon" class="fas fa-bars web-title"></i></button>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu md:hidden">
+    <ul class="p-4"><ul class="flex flex-wrap gap-4 justify-center text-sm">
+      <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('about')">About</a></li>
+      <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('resume')">Resume</a></li>
+      <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('projects')">Projects</a></li>
+      <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('blog')">Blog</a></li>
+      <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul></ul>
+  </nav>
+</header>
+
+<main class="container mx-auto px-4 py-8 flex flex-col-reverse md:flex-row gap-0">
+  <!-- Sidebar -->
+  <aside class="md:w-[28%] lg:w-1/4 bg-transparent rounded-3xl p-4 mt-8 md:mt-0">
+    <hr class="my-10 block md:hidden border-[#FFF8F5]">
+    <img alt="Profile — Muhammad Farid Nurohman" class="rounded-full mx-auto mb-4 object-cover w-[150px] h-[150px] border-4 border-[#FBEBE1]" src="https://github.com/faridnurohman19.png">
+    <h2 class="text-center text-xl font-bold web-title">Muhammad Farid Nurohman</h2>
+    <p class="text-center text-gray-600 mb-1 text-sm">Operations Executive @ Y Ventures</p>
+    <p class="text-center text-gray-600 mb-4 text-sm"><a href="mailto:faridnurohman192@gmail.com" class="hover:underline">faridnurohman192@gmail.com</a></p>
+    <hr class="my-4">
+    <div>
+      <h3 class="text-lg font-bold mb-2 web-title text-[15px]">About</h3>
+      <p class="text-gray-600 mb-4 text-[14px] leading-relaxed">Logistics & e-commerce ops — Amazon FBA fulfillment, 3PL coordination (US/UK), inventory & process optimization. Ex Lazada Logistics. Based Jakarta, remote for Singapore.</p>
+      <a href="#content-holder"><button class="bg-[#FFDCC1] text-gray-600 px-5 py-3 rounded-full transition-transform hover:bg-[#F2D1B7] active:scale-95 duration-200 text-sm font-medium" onclick="showSection('resume')">View Resume</button></a>
+    </div>
+    <hr class="my-7 opacity-0">
+    <section class="footer">
+      <ul class="icons inline text-[18px] flex flex-wrap gap-1">
+        <li><a href="https://github.com/faridnurohman19" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/faridnurohman/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="mailto:faridnurohman192@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+      </ul>
+      <hr class="my-2 opacity-0">
+      <p class="text-xs">© Muhammad Farid Nurohman <span class="px-1">•</span> <a class="hover:text-blue-500 hover:underline" href="https://github.com/faridnurohman19" target="_blank">github.com/faridnurohman19</a></p>
+    </section>
+  </aside>
+
+  <!-- Content -->
+  <section class="md:w-[72%] lg:w-3/4 md:ml-8">
+    <div id="content-holder" class="bg-[#FBEBE1] rounded-3xl p-6 md:p-8">
+      
+      <!-- ABOUT (default) -->
+      <div id="sec-about">
+        <h2 class="text-2xl font-bold web-title mb-2">ABOUT ME</h2>
+        <p class="web-subtitle text-sm tracking-widest text-[#87521C]/70 mb-4">Operations • Logistics • E-commerce • Process Optimization</p>
+        <hr class="mb-6 border-white/60">
+        
+        <div class="web-text text-[15px] leading-7 space-y-4">
+          <p><img src="https://ayra.eu.org/static/emojis/semangat.png" class="inline w-5 h-5 -mt-1 mr-1" alt=""> I am a <b>Logistics professional (B.A. Agribusiness)</b> based in Jakarta, working remotely as <b>Operations Executive at Y Ventures Group (Singapore)</b>. Y Ventures is a book publisher partner & Amazon seller (FBA) — I manage end-to-end shipments from publishers to Amazon Fulfillment Centers and keep inventory across 3PL warehouses accurate with regular reporting.</p>
+          
+          <p><img src="https://ayra.eu.org/static/emojis/ngantuk.png" class="inline w-5 h-5 -mt-1 mr-1" alt=""> Previously at <b>Lazada Logistics</b> — KAM & Seller Ops for Fulfillment by Lazada (FBL) & Multi Channel Logistics (MCL), handling brands like <b>Nike, Toshiba, Geoff Max</b>. Led process improvements that cut BAU lead times by <b>30–50%</b> using Excel Macros & VBA, and kept MCL inventory aligned between Upfos & Lazada WMS.</p>
+
+          <p>Experience across key account management, Amazon FBA fulfillment, and domestic distribution in US & UK markets working closely with 3PL partners. Skilled in inventory management, data analysis, and process improvement — always looking for ways to make supply chains run smarter.</p>
+
+          <p><img src="https://ayra.eu.org/static/emojis/sibuk.png" class="inline w-5 h-5 -mt-1 mr-1" alt=""> On the tooling side I build lightweight automation — Python, Google Sheets, email pipelines — to reduce manual follow-ups and make handoffs auditable. Comfortable with data-heavy Excel work and marketplace ops tooling.</p>
+
+          <p><img src="https://ayra.eu.org/static/emojis/ngamuk.png" class="inline w-5 h-5 -mt-1 mr-1" alt=""> Open to connecting with others in logistics & e-commerce. Let’s talk if you’re building something in fulfillment, 3PL, or ops automation.</p>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="font-bold web-title text-sm mb-3">Specializations:</h3>
+          <ul class="list-disc pl-6 web-text text-[14px] space-y-1">
+            <li>Amazon FBA Inbound & 3PL Coordination (US/UK)</li>
+            <li>Inventory Management & Reporting</li>
+            <li>E-commerce Logistics & Key Account Management</li>
+            <li>Process Improvement (VBA / Excel Macros, –30–50% lead time)</li>
+            <li>Data Analysis & Ops Automation (Python, Sheets)</li>
+          </ul>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-4 text-sm">
+          <a href="#" onclick="showSection('resume')" class="text-[#2563eb] font-medium hover:underline">Resume →</a>
+          <a href="#" onclick="showSection('projects')" class="text-[#2563eb] font-medium hover:underline">Projects →</a>
+          <a href="#" onclick="showSection('contact')" class="text-[#2563eb] font-medium hover:underline">Contact me →</a>
+        </div>
+      </div>
+
+      <!-- RESUME -->
+      <div id="sec-resume" class="hidden">
+        <h2 class="text-2xl font-bold web-title mb-2">RESUME</h2>
+        <p class="web-subtitle text-xs tracking-widest text-[#87521C]/60 mb-4">Jakarta, Indonesia · faridnurohman192@gmail.com · <a href="https://www.linkedin.com/in/faridnurohman/" target="_blank" class="underline">linkedin.com/in/faridnurohman</a> · <a href="https://github.com/faridnurohman19" target="_blank" class="underline">github.com/faridnurohman19</a></p>
+        <hr class="mb-6 border-white/60">
+
+        <div class="space-y-6">
+          <!-- Experience -->
+          <div>
+            <h3 class="font-bold web-title text-[13px] tracking-widest mb-3">Experience</h3>
+            <div class="space-y-4">
+              <div class="bg-white/70 rounded-2xl p-5">
+                <div class="flex flex-wrap justify-between gap-2">
+                  <h4 class="font-bold text-[14px]">Operations Executive — Y Ventures Group</h4>
+                  <span class="text-xs text-gray-500 whitespace-nowrap">May 2025 – Present · Singapore (Remote Jakarta)</span>
+                </div>
+                <p class="text-xs text-gray-500 mb-2">Book publisher partner & Amazon FBA seller — data-driven sales insights per title</p>
+                <ul class="list-disc pl-5 text-[13px] web-text space-y-1">
+                  <li>Managed & coordinated end-to-end shipments from publishers to Amazon Fulfillment Centers, ensuring timely & accurate delivery.</li>
+                  <li>Monitored & controlled inventory levels across 3PL warehouses, providing regular detailed inventory reports.</li>
+                </ul>
+              </div>
+
+              <div class="bg-white/70 rounded-2xl p-5">
+                <div class="flex flex-wrap justify-between gap-2">
+                  <h4 class="font-bold text-[14px]">KAM & Seller Ops — Lazada</h4>
+                  <span class="text-xs text-gray-500 whitespace-nowrap">Jul 2024 – May 2025 · Jakarta</span>
+                </div>
+                <ul class="list-disc pl-5 text-[13px] web-text space-y-1">
+                  <li>Managed Fulfillment by Lazada (FBL) & Multi Channel Logistics (MCL) sellers and supported operational needs.</li>
+                  <li>Maintained MCL inventory accuracy via Upfos System aligned with Lazada WMS.</li>
+                  <li>Led process improvement with Excel Macros & VBA — reduced BAU lead times by 30–50% in commercial ops.</li>
+                  <li>Managed brands: Nike, Toshiba, Geoff Max.</li>
+                </ul>
+              </div>
+
+              <div class="bg-white/70 rounded-2xl p-5">
+                <div class="flex flex-wrap justify-between gap-2">
+                  <h4 class="font-bold text-[14px]">3PV – Solution — Lazada</h4>
+                  <span class="text-xs text-gray-500 whitespace-nowrap">Jan 2024 – Jun 2024 · Jakarta</span>
+                </div>
+                <ul class="list-disc pl-5 text-[13px] web-text space-y-1">
+                  <li>Project management for CES improvements; market research & benchmarking on competitor Last Mile delivery schemes & T&C.</li>
+                  <li>Provided CES service data (price, coverage, COD) for Business Development; guided sellers on Connexus Apps & ensured operations ran smoothly.</li>
+                </ul>
+              </div>
+
+              <div class="bg-white/70 rounded-2xl p-5">
+                <div class="flex flex-wrap justify-between gap-2">
+                  <h4 class="font-bold text-[14px]">3PV – Account Creation — Lazada</h4>
+                  <span class="text-xs text-gray-500 whitespace-nowrap">Oct 2023 – Dec 2023 · Jakarta</span>
+                </div>
+                <ul class="list-disc pl-5 text-[13px] web-text space-y-1">
+                  <li>Created & maintained Courier Express Service (CES) accounts; monitoring & reporting CES internal account issues.</li>
+                  <li>PIC for Connexus Admin Operator at JakartaxBeauty 2023 — onboarded 12 admin operators & authored usage guidelines.</li>
+                </ul>
+              </div>
+
+              <div class="bg-white/70 rounded-2xl p-5">
+                <div class="flex flex-wrap justify-between gap-2">
+                  <h4 class="font-bold text-[14px]">Customer Experience Specialist — Lazada</h4>
+                  <span class="text-xs text-gray-500 whitespace-nowrap">Feb 2023 – Jun 2023 · Jakarta</span>
+                </div>
+                <ul class="list-disc pl-5 text-[13px] web-text space-y-1">
+                  <li>Analyzed end-to-end customer journeys & built data visualizations for operational insights.</li>
+                  <li>Used NPS & CSat to drive CX improvements; processed 5,000+ data points in Excel for feedback analysis.</li>
+                </ul>
+              </div>
+
+              <div class="bg-white/70 rounded-2xl p-5">
+                <div class="flex flex-wrap justify-between gap-2">
+                  <h4 class="font-bold text-[14px]">Search Engine Evaluator (UHRS) — clickworker</h4>
+                  <span class="text-xs text-gray-500 whitespace-nowrap">Feb 2022 – Feb 2023</span>
+                </div>
+                <ul class="list-disc pl-5 text-[13px] web-text space-y-1">
+                  <li>Data labelling for AI (UHRS) — video relevance & search satisfaction; achieved avg. rate score up to 75%.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-white/70 rounded-2xl p-5">
+              <h4 class="font-bold text-[13px] web-title mb-2">Education</h4>
+              <p class="text-[13px] web-text"><b>Institut Pertanian Bogor (IPB)</b> — B.A. Agribusiness, 3.89/4.00</p>
+              <p class="text-xs text-gray-500">2019 – 2023</p>
+              <div class="mt-3 pt-3 border-t border-black/5">
+                <p class="text-xs font-semibold">Publication</p>
+                <p class="text-[12px] web-text leading-5">Understanding the price perception: Assessing youth willingness to pay for organic rice in Indonesia — <i>BIO Web of Conferences</i>, 12 Jul 2024<br><a href="https://doi.org/10.1051/bioconf/202411902016" target="_blank" class="text-[#2563eb] hover:underline break-all">doi.org/10.1051/bioconf/202411902016</a></p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="bg-white/70 rounded-2xl p-5">
+                <h4 class="font-bold text-[13px] web-title mb-2">Languages</h4>
+                <p class="text-[13px] web-text">Indonesian — Native · Javanese — Native · English — Professional</p>
+              </div>
+              <div class="bg-white/70 rounded-2xl p-5">
+                <h4 class="font-bold text-[13px] web-title mb-2">Volunteering</h4>
+                <p class="text-[13px] web-text"><b>Research Volunteer — Kedaireka.id</b> <span class="text-xs text-gray-500">Sep–Oct 2022</span><br><span class="text-xs">Agribisnis Sapi Potong — Sekolah Peternakan Rakyat, Kab. Blora (Animal Welfare)</span></p>
+                <p class="text-[13px] web-text mt-2"><b>Educator Volunteer — Sragen Sadar Corona</b> <span class="text-xs text-gray-500">May–Jun 2020</span><br><span class="text-xs">Covid-19 education & donation coordination (money, groceries, masks, PPE)</span></p>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-xs text-gray-400">Source: linkedin.com/in/faridnurohman — tell me if any part should be phrased differently for hiring managers.</p>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div id="sec-projects" class="hidden">
+        <h2 class="text-2xl font-bold web-title mb-2">PROJECTS</h2><hr class="mb-6 border-white/60">
+        <div class="grid gap-4">
+          <a href="https://github.com/faridnurohman19/VBA" target="_blank" class="block bg-white/70 rounded-2xl p-5 hover:bg-white transition">
+            <h4 class="font-bold text-sm">VBA — Excel Macros for Ops</h4>
+            <p class="text-sm web-text mt-1">Macros that cut BAU lead times 30–50% in commercial ops — see <code>github.com/faridnurohman19/VBA</code></p>
+            <span class="text-xs text-[#2563eb]">github.com/faridnurohman19/VBA →</span>
+          </a>
+          <div class="bg-white/70 rounded-2xl p-5">
+            <h4 class="font-bold text-sm">PPP Outbound & Shipment Detail Automation</h4>
+            <p class="text-sm web-text mt-1">Fill XLSX + draft email dari template EML — auto PO formatting & recipient handling.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div id="sec-contact" class="hidden">
+        <h2 class="text-2xl font-bold web-title mb-2">CONTACT</h2><hr class="mb-6 border-white/60">
+        <div class="web-text text-[15px] leading-7">
+          <p>Email: <a href="mailto:faridnurohman192@gmail.com" class="text-[#2563eb] hover:underline">faridnurohman192@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/faridnurohman/" target="_blank" class="text-[#2563eb] hover:underline">linkedin.com/in/faridnurohman</a></p>
+          <p>GitHub: <a href="https://github.com/faridnurohman19" target="_blank" class="text-[#2563eb] hover:underline">github.com/faridnurohman19</a></p>
+          <p class="mt-4 text-sm text-gray-500">Pinned repo: <a href="https://github.com/faridnurohman19/VBA" target="_blank" class="text-[#2563eb] hover:underline">VBA</a></p>
+        </div>
+      </div>
+
+      <!-- BLOG -->
+      <div id="sec-blog" class="hidden">
+        <h2 class="text-2xl font-bold web-title mb-2">BLOG</h2><hr class="mb-6 border-white/60">
+        <p class="web-text text-sm">Blog terpisah seperti ayra (blog.ayra.eu.org) — bisa pakai subdomain <code>blog.farid.dev</code> atau link ke Medium/Hashnode. Mau aku sambungin?</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<script>
+const btn=document.getElementById('menu-btn'),menu=document.getElementById('mobile-menu');
+if(btn) btn.addEventListener('click',()=>{menu.classList.toggle('open');btn.classList.toggle('active')});
+function showSection(name){
+  const map={home:'about',about:'about',resume:'resume',projects:'projects',contact:'contact',blog:'blog'};
+  const target=map[name]||name;
+  document.querySelectorAll('[id^="sec-"]').forEach(el=>el.classList.add('hidden'));
+  const el=document.getElementById('sec-'+target);
+  if(el) el.classList.remove('hidden');
+  if(menu) menu.classList.remove('open');
+  if(btn) btn.classList.remove('active');
+  document.getElementById('content-holder').scrollIntoView({behavior:'smooth',block:'start'});
+}
+</script>
+</body>
+</html>
