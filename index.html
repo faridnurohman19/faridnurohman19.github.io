@@ -38,7 +38,6 @@ header.sticky{top:0;z-index:1000}
         <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('about')">About</a></li><div class="vlx mx-5"></div>
         <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('resume')">Resume</a></li><div class="vlx mx-5"></div>
         <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('projects')">Projects</a></li><div class="vlx mx-5"></div>
-        <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('blog')">Blog</a></li><div class="vlx mx-5"></div>
         <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('contact')">Contact</a></li>
       </ul>
     </nav>
@@ -52,7 +51,6 @@ header.sticky{top:0;z-index:1000}
       <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('about')">About</a></li>
       <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('resume')">Resume</a></li>
       <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('projects')">Projects</a></li>
-      <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('blog')">Blog</a></li>
       <li><a class="text-gray-600 hover:text-gray-900" href="#" onclick="showSection('contact')">Contact</a></li>
     </ul></ul>
   </nav>
@@ -255,16 +253,8 @@ header.sticky{top:0;z-index:1000}
           <p>Email: <a href="mailto:faridnurohman192@gmail.com" class="text-[#2563eb] hover:underline">faridnurohman192@gmail.com</a></p>
           <p>LinkedIn: <a href="https://www.linkedin.com/in/faridnurohman/" target="_blank" class="text-[#2563eb] hover:underline">linkedin.com/in/faridnurohman</a></p>
           <p>GitHub: <a href="https://github.com/faridnurohman19" target="_blank" class="text-[#2563eb] hover:underline">github.com/faridnurohman19</a></p>
-          <p class="mt-4 text-sm text-gray-500">Pinned repo: <a href="https://github.com/faridnurohman19/VBA" target="_blank" class="text-[#2563eb] hover:underline">VBA</a></p>
         </div>
       </div>
-
-      <!-- BLOG -->
-      <div id="sec-blog" class="hidden">
-        <h2 class="text-2xl font-bold web-title mb-2">BLOG</h2><hr class="mb-6 border-white/60">
-        <p class="web-text text-sm">Blog terpisah seperti ayra (blog.ayra.eu.org) — bisa pakai subdomain <code>blog.farid.dev</code> atau link ke Medium/Hashnode. Mau aku sambungin?</p>
-      </div>
-
     </div>
   </section>
 </main>
@@ -273,7 +263,7 @@ header.sticky{top:0;z-index:1000}
 const btn=document.getElementById('menu-btn'),menu=document.getElementById('mobile-menu');
 if(btn) btn.addEventListener('click',()=>{menu.classList.toggle('open');btn.classList.toggle('active')});
 function showSection(name){
-  const map={home:'about',about:'about',resume:'resume',projects:'projects',contact:'contact',blog:'blog'};
+  const map={home:'about',about:'about',resume:'resume',projects:'projects',contact:'contact'};
   const target=map[name]||name;
   document.querySelectorAll('[id^="sec-"]').forEach(el=>el.classList.add('hidden'));
   const el=document.getElementById('sec-'+target);
